@@ -3,37 +3,40 @@ import './App.css';
 import * as React from "react";
 import './style.css'
 
-const smallContainer = <div className="container" 
+const darkslateblueContainer = <div className="container" 
         style={{color:'white', backgroundColor:'darkslateblue'}}>
-        Petit conteneur dark texte blanc</div>
-const mediumContainer = <div className="container" 
+       </div>
+const pinkContainer = <div className="container" 
         style={{color:'black', backgroundColor:'pink'}}>
-        Moyen conteneur rose texte noire</div>
-const largeContainer = <div className=  
-
-
-
-"container"  
+       </div>
+const greenContainer = <div className=  "container"  
 
         style={{color:'black', backgroundColor:'green'}}>
-        Grand conteneur vert rose texte noire</div>
+       </div>
  
-function Container({ children,style, color}){  
-      return <div  
-      
-      style={{...style,border:'1px solid',color }}>{children}  </div>
+
+
+const buttonAdd = <button> Ajouter </button>
+
+function AddColor(){
+  return <div>
+    {buttonAdd}
+  </div>
 }
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">       
-        Ceci est le site test des styles       
+      <header className="App-header">    
+      
+        <div>Projet 2 </div>  
+        Styles       
       </header>
-      <Container color ='blue' style={{backgroundColor:'darkslateblue'}}>Ceci est un test</Container>
-      {smallContainer}
-      {mediumContainer}
-      {largeContainer}
+    
+      {darkslateblueContainer}
+      <AddColor/>
+      {pinkContainer}
+      {greenContainer}
     </div>
   );
 }
