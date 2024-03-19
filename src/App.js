@@ -3,40 +3,33 @@ import './App.css';
 import * as React from "react";
 import './style.css'
 
-const darkslateblueContainer = <div className="container" 
-        style={{color:'white', backgroundColor:'darkslateblue'}}>
+const whiteContainer = <div className="container" 
+        style={{ backgroundColor:'white'}}>
        </div>
 const pinkContainer = <div className="container" 
-        style={{color:'black', backgroundColor:'pink'}}>
+        style={{ backgroundColor:'pink'}}>
        </div>
 const greenContainer = <div className=  "container"  
 
-        style={{color:'black', backgroundColor:'green'}}>
+        style={{backgroundColor:'green'}}>
        </div>
- 
 
+const blackContainer = <div className=  "container"  
+      style={{ backgroundColor:'black'}}>
+      </div>
 
-const buttonAdd = <button> Ajouter </button>
-
-function AddColor(){
-  return <div>
-    {buttonAdd}
-  </div>
-}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">    
       
         <div>Projet 2 </div>  
-        Styles       
-      </header>
+        Styles            
+
+      {whiteContainer}
+     
+      
     
-      {darkslateblueContainer}
-      <AddColor/>
-      {pinkContainer}
-      {greenContainer}
     </div>
   );
 }
