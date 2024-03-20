@@ -6,6 +6,7 @@
   flex-direction: column;
   font-size: calc(20px + 5vmin);
   color: white;
+  font-family: Arial, sans-serif;
 }
 
 .App-logo {
